@@ -57,37 +57,6 @@ This keeps the logic:
 
 ---
 
-## Project Structure
-
-collision-risk-system/
-│
-├── index.html # Entry point
-├── styles.css # Minimal UI styling
-│
-├── js/
-│ ├── main.js # App bootstrap & animation loop
-│ │
-│ ├── models/
-│ │ ├── Vessel.js # Base vessel model
-│ │ └── Target.js # Target vessel (extends Vessel)
-│ │
-│ ├── simulation/
-│ │ └── Simulator.js # Time-stepped motion engine
-│ │
-│ ├── analysis/
-│ │ └── RiskAnalyzer.js # CPA / TCPA calculations
-│ │
-│ ├── rendering/
-│ │ └── Renderer.js # Canvas rendering logic
-│ │
-│ └── ui/
-│ └── InfoPanel.js # Textual status display
-│
-└── README.md
-
-
----
-
 ## Design Principles
 
 - **Separation of Concerns**
@@ -108,8 +77,6 @@ No build tools or dependencies required.
 1. Clone the repository
 2. Open `index.html` in a modern browser  
    (Chrome / Firefox recommended)
-
-That’s it.
 
 ---
 
