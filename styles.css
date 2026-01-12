@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#layout {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+#simulationCanvas {
+    background-color: #fff;
+    border: 7px solid #000000;
+}
+
+#infoPanel {
+    min-width: 260px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 7px solid #000000;
+    border-radius: 9px;
+}
+
+#infoPanel h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+#controls {
+    margin-top: 15px;
+    padding: 10px 5px;
+    background-color: #f9f9f9;
+    border: 7px solid #000000;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#controls label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#viewLabel {
+    font-weight: bold;
+}

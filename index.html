@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Situational Awareness & Collision Risk System</title>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h2>Collision Risk System</h2>
+
+    <div id="layout">
+        <canvas id="simulationCanvas" width="700" height="600"></canvas>
+
+        <div id="infoPanel">
+            <p>Status: Ready</p>
+        </div>
+    </div>
+
+    <!-- Main application script -->
+    <script type="module" src="js/main.js"></script>
+
+    <div id="controls">
+        <button id="toggleSim">Pause</button>
+
+        <label>
+            Speed:
+            <input type="range" id="speedControl" min="0.5" max="2" step="0.1" value="1" />
+            <span id="speedValue">1.0×</span>
+        </label>
+
+        <label>
+            View:
+            <select id="viewMode">
+                <option value="SHIP_CENTERED">Ship-Centered</option>
+                <option value="WORLD">World</option>
+            </select>
+        </label>
+
+        <span id="viewLabel">Current View: Ship-Centered</span>
+    </div>
+
+
+</body>
+</html>
