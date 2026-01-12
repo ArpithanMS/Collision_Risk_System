@@ -40,7 +40,24 @@ At each simulation step, the system:
 - Adjustable simulation speed
 - Live information panel for all targets
 
----
+## Radar Model & Target Lifecycle
+
+The system uses a **ship-centered radar model**:
+
+- The own vessel is fixed at the center of the display
+- A circular radar boundary represents sensor range
+- Target vessels:
+  - enter the radar from the boundary
+  - move through the radar space
+  - exit and re-enter later as part of a fixed-size traffic pool
+
+Targets outside the radar range:
+- continue to exist in the simulation
+- are not rendered or analyzed
+- reappear only when re-entering the radar boundary
+
+This mirrors how real situational awareness systems manage visibility and track lifecycle without modeling sensor detection directly.
+
 
 ## Risk Logic (Core Idea)
 
