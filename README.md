@@ -33,8 +33,16 @@ At each simulation step, the system:
   - **SAFE**
   - **WARNING**
   - **DANGER**
-- Radar-style ship-centered view
-- Optional world-coordinate view
+- **Ship-Centered View (Primary)**  
+  - Radar-style display
+  - Collision risk is evaluated relative to the own vessel
+  - CPA/TCPA indicators are meaningful in this view
+
+- **World View (Secondary)**  
+  - Absolute world-coordinate visualization
+  - Included to demonstrate separation of simulation and rendering
+  - Risk indicators remain relative to the own vessel
+
 - Velocity vectors for motion clarity
 - Pause / resume simulation
 - Adjustable simulation speed
@@ -84,6 +92,8 @@ This keeps the logic:
   - No randomness in risk evaluation
 - **Extensibility**
   - New risk models or vessel types can be added cleanly
+
+The system prioritizes **explainable behavior** over visual complexity.
 
 ---
 
