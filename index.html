@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8" />
     <title>Situational Awareness & Collision Risk System</title>
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h2>Collision Risk System</h2>
+    <h2 class="page-title">Collision Risk System</h2>
 
     <div id="layout">
-        <canvas id="simulationCanvas" width="700" height="600"></canvas>
+        <div id="radarSection">
+            <canvas id="simulationCanvas" width="800" height="600"></canvas>
 
-        <div id="infoPanel">
-            <p>Status: Ready</p>
+            <div id="infoPanel">
+                <h3>Target Status</h3>
+                <p>Status: Ready</p>
+            </div>
         </div>
     </div>
+
 
     <!-- Main application script -->
     <script type="module" src="js/main.js"></script>
